@@ -1,0 +1,31 @@
+.btn {
+  font-size: 24px;
+  line-height: 2.4em;
+  padding: 0 1em;
+  text-align: center;
+  background-color: $default;
+  cursor: pointer;
+  transition: opacity 0.1s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+
+  &.primary {
+    background-color: $primary;
+  }
+  &.cancel {
+    background-color: transparent;
+    color: #999;
+  }
+  &.orange {
+    background-color: $orange;
+  }
+
+  &.rounded {
+    border-radius: 1.2em;
+  }
+}

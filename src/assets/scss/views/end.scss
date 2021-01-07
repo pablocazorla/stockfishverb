@@ -1,0 +1,18 @@
+.end-title {
+  text-align: center;
+  font-size: 40px;
+  border: 1px solid #ddd;
+  line-height: 2.4;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1em;
+
+  &.draw {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &.mate {
+    color: rgb(0, 243, 0);
+    border-color: rgb(0, 243, 0);
+    background-color: rgba(0, 243, 0, 0.2);
+  }
+}

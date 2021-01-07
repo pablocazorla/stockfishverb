@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  z-index: 110;
+  top: -4px - $header-h;
+  height: $header-h;
+  width: 100%;
+  background-color: darken($body-bg, 10%);
+  transition: top 0.3s;
+
+  .header-row {
+    display: flex;
+    align-items: center;
+    height: $header-h;
+  }
+
+  .title {
+    flex: 1 0 auto;
+    padding: 0 2em;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+
+    .menu-btn {
+      padding: 0 1em;
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      line-height: $header-h;
+      background-color: rgba(0, 0, 0, 0.452);
+      cursor: pointer;
+      @include unwrap;
+      font-size: 11px;
+
+      .icon {
+        margin-right: 5px;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &.transparent {
+        border-left: none;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  &.visible {
+    top: 0;
+  }
+}
+
+// .btn-menu {
+//   width: $header-h;
+//   height: $header-h;
+//   line-height: $header-h;
+//   text-align: center;
+//   cursor: pointer;
+//   font-size: 16px;
+// }
